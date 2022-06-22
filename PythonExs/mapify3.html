@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f21bc76b4a2dd533dba75a97ea05c7fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f21bc76b4a2dd533dba75a97ea05c7fd" ></div>
+        
+</body>
+<script>    
+    
+            var map_f21bc76b4a2dd533dba75a97ea05c7fd = L.map(
+                "map_f21bc76b4a2dd533dba75a97ea05c7fd",
+                {
+                    center: [38.58, -99.09],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0b822abba7d78d3ba1506d4832c2901a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var marker_83e7fb601a2b8bf7f21a04c91168fc45 = L.marker(
+                [48.85887957, 2.294484311],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_979c5cf4cf8ac11d78cdd85748c02e40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83e7fb601a2b8bf7f21a04c91168fc45.setIcon(icon_979c5cf4cf8ac11d78cdd85748c02e40);
+        
+    
+        var popup_66bbaa8943061290b50fefc807dba134 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a72277d5765188443929daed49a21d3f = $(`<div id="html_a72277d5765188443929daed49a21d3f" style="width: 100.0%; height: 100.0%;">Eiffel Tower, Paris</div>`)[0];
+            popup_66bbaa8943061290b50fefc807dba134.setContent(html_a72277d5765188443929daed49a21d3f);
+        
+
+        marker_83e7fb601a2b8bf7f21a04c91168fc45.bindPopup(popup_66bbaa8943061290b50fefc807dba134)
+        ;
+
+        
+    
+    
+            var marker_765993ffe5831c20b86bd166a0845cc6 = L.marker(
+                [41.89039388, 12.49222017],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_a756ef893f37e11f9cfc45f519e4e8e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_765993ffe5831c20b86bd166a0845cc6.setIcon(icon_a756ef893f37e11f9cfc45f519e4e8e1);
+        
+    
+        var popup_896b3fa05c4a75239d2866e9ddd648b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4db22d90cabfdc663cfdbc0354397392 = $(`<div id="html_4db22d90cabfdc663cfdbc0354397392" style="width: 100.0%; height: 100.0%;">The Colosseum, Rome</div>`)[0];
+            popup_896b3fa05c4a75239d2866e9ddd648b3.setContent(html_4db22d90cabfdc663cfdbc0354397392);
+        
+
+        marker_765993ffe5831c20b86bd166a0845cc6.bindPopup(popup_896b3fa05c4a75239d2866e9ddd648b3)
+        ;
+
+        
+    
+    
+            var marker_1136490573a3193f25b4ee1a4bc13cd2 = L.marker(
+                [40.68942022, -74.04441457],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_4d23435c732ebc461d11e1e20ef6cf91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1136490573a3193f25b4ee1a4bc13cd2.setIcon(icon_4d23435c732ebc461d11e1e20ef6cf91);
+        
+    
+        var popup_17af02bea279cb13554ec2ac5f9b869e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1718727602b85db6490db9453b15ac7c = $(`<div id="html_1718727602b85db6490db9453b15ac7c" style="width: 100.0%; height: 100.0%;">Statue of Liberty, New York City</div>`)[0];
+            popup_17af02bea279cb13554ec2ac5f9b869e.setContent(html_1718727602b85db6490db9453b15ac7c);
+        
+
+        marker_1136490573a3193f25b4ee1a4bc13cd2.bindPopup(popup_17af02bea279cb13554ec2ac5f9b869e)
+        ;
+
+        
+    
+    
+            var marker_7e730687472e0dc615512e59ec85d7f1 = L.marker(
+                [-13.16291136, -72.5449629],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_f20df81a55af1e5acb8751e6dd20691d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7e730687472e0dc615512e59ec85d7f1.setIcon(icon_f20df81a55af1e5acb8751e6dd20691d);
+        
+    
+        var popup_5f3e4cf082e93f33f914fe53aeeb7335 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c447e9c3ded8e6ea49f47f133076b47c = $(`<div id="html_c447e9c3ded8e6ea49f47f133076b47c" style="width: 100.0%; height: 100.0%;">Machu Picchu, Peru</div>`)[0];
+            popup_5f3e4cf082e93f33f914fe53aeeb7335.setContent(html_c447e9c3ded8e6ea49f47f133076b47c);
+        
+
+        marker_7e730687472e0dc615512e59ec85d7f1.bindPopup(popup_5f3e4cf082e93f33f914fe53aeeb7335)
+        ;
+
+        
+    
+    
+            var marker_1c730ed152819f21edc33eaef5c5ff85 = L.marker(
+                [37.97173526, 23.72575993],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_be80d00a1e7190f8ca981747e1977d57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c730ed152819f21edc33eaef5c5ff85.setIcon(icon_be80d00a1e7190f8ca981747e1977d57);
+        
+    
+        var popup_8e382d07180328ff68d9aed2b936bd7f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbb4da978186824f10e2d5c60c65266f = $(`<div id="html_cbb4da978186824f10e2d5c60c65266f" style="width: 100.0%; height: 100.0%;">The Acropolis, Athens</div>`)[0];
+            popup_8e382d07180328ff68d9aed2b936bd7f.setContent(html_cbb4da978186824f10e2d5c60c65266f);
+        
+
+        marker_1c730ed152819f21edc33eaef5c5ff85.bindPopup(popup_8e382d07180328ff68d9aed2b936bd7f)
+        ;
+
+        
+    
+    
+            var marker_d3762e9b3d2754e7978e31a04c2d81be = L.marker(
+                [27.17523635, 78.04214601],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_4661a62eda01a91a9685fd861b44e564 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d3762e9b3d2754e7978e31a04c2d81be.setIcon(icon_4661a62eda01a91a9685fd861b44e564);
+        
+    
+        var popup_c2159fdd113508c7b8ec055a948bb493 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_651c9acba97ff6108ada9517269ed423 = $(`<div id="html_651c9acba97ff6108ada9517269ed423" style="width: 100.0%; height: 100.0%;">The Taj Mahal, India</div>`)[0];
+            popup_c2159fdd113508c7b8ec055a948bb493.setContent(html_651c9acba97ff6108ada9517269ed423);
+        
+
+        marker_d3762e9b3d2754e7978e31a04c2d81be.bindPopup(popup_c2159fdd113508c7b8ec055a948bb493)
+        ;
+
+        
+    
+    
+            var marker_7addcfe5b0d72328cf8fd7d150e9714f = L.marker(
+                [29.97943894, 31.1342019],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_be8e8904ba80c2e6a92bc7daea25e0ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7addcfe5b0d72328cf8fd7d150e9714f.setIcon(icon_be8e8904ba80c2e6a92bc7daea25e0ed);
+        
+    
+        var popup_5bbcce951c341e2364af169b451a9b24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2fba6130f7e48395a2f0b0877053e6b = $(`<div id="html_f2fba6130f7e48395a2f0b0877053e6b" style="width: 100.0%; height: 100.0%;">Pyramids of Giza, Egypt</div>`)[0];
+            popup_5bbcce951c341e2364af169b451a9b24.setContent(html_f2fba6130f7e48395a2f0b0877053e6b);
+        
+
+        marker_7addcfe5b0d72328cf8fd7d150e9714f.bindPopup(popup_5bbcce951c341e2364af169b451a9b24)
+        ;
+
+        
+    
+    
+            var marker_9d450a8efb33f04f01037d2032c909ce = L.marker(
+                [40.4340577, 116.5704004],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_13b468b31db8138cfa6c38337f93fc71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9d450a8efb33f04f01037d2032c909ce.setIcon(icon_13b468b31db8138cfa6c38337f93fc71);
+        
+    
+        var popup_1cb4cc2023e8930578d52f19e710a22b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb14fd8a1df4c07559c6b45ebeff0c1f = $(`<div id="html_eb14fd8a1df4c07559c6b45ebeff0c1f" style="width: 100.0%; height: 100.0%;">Great Wall of China</div>`)[0];
+            popup_1cb4cc2023e8930578d52f19e710a22b.setContent(html_eb14fd8a1df4c07559c6b45ebeff0c1f);
+        
+
+        marker_9d450a8efb33f04f01037d2032c909ce.bindPopup(popup_1cb4cc2023e8930578d52f19e710a22b)
+        ;
+
+        
+    
+    
+            var marker_0d5fa0f733735d2e81fb42a0e018a8fc = L.marker(
+                [13.41248205, 103.8669888],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_245602125fc3da0e11e05f2bd6761edb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d5fa0f733735d2e81fb42a0e018a8fc.setIcon(icon_245602125fc3da0e11e05f2bd6761edb);
+        
+    
+        var popup_78579a4b6ea451828f1f94876bb04ed9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f4b64205a4bf1f07dd0c7ceffffdb1f = $(`<div id="html_5f4b64205a4bf1f07dd0c7ceffffdb1f" style="width: 100.0%; height: 100.0%;">Angkor Wat, Cambodia</div>`)[0];
+            popup_78579a4b6ea451828f1f94876bb04ed9.setContent(html_5f4b64205a4bf1f07dd0c7ceffffdb1f);
+        
+
+        marker_0d5fa0f733735d2e81fb42a0e018a8fc.bindPopup(popup_78579a4b6ea451828f1f94876bb04ed9)
+        ;
+
+        
+    
+    
+            var marker_6a8af71601c88d24e37e5e3e8b8dc6d5 = L.marker(
+                [30.32307063, 35.48015088],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_b8b686831298cda831cf94677ae5b8cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6a8af71601c88d24e37e5e3e8b8dc6d5.setIcon(icon_b8b686831298cda831cf94677ae5b8cf);
+        
+    
+        var popup_ab6d3c8f6ea757de1e13ac39b34d5073 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73af28859aafcd9c61963e4584588907 = $(`<div id="html_73af28859aafcd9c61963e4584588907" style="width: 100.0%; height: 100.0%;">Petra, Jordan</div>`)[0];
+            popup_ab6d3c8f6ea757de1e13ac39b34d5073.setContent(html_73af28859aafcd9c61963e4584588907);
+        
+
+        marker_6a8af71601c88d24e37e5e3e8b8dc6d5.bindPopup(popup_ab6d3c8f6ea757de1e13ac39b34d5073)
+        ;
+
+        
+    
+    
+            var marker_45e5ced43c4590bea0c0652e7e38b455 = L.marker(
+                [36.10055981, -112.1123559],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_ce0831232bde1e1f513d3c786caa2027 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45e5ced43c4590bea0c0652e7e38b455.setIcon(icon_ce0831232bde1e1f513d3c786caa2027);
+        
+    
+        var popup_477117cb482fcc12d2e5256f43568f94 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bde229c4691c0c4e1264bc95acb6430 = $(`<div id="html_0bde229c4691c0c4e1264bc95acb6430" style="width: 100.0%; height: 100.0%;">Grand Canyon, USA</div>`)[0];
+            popup_477117cb482fcc12d2e5256f43568f94.setContent(html_0bde229c4691c0c4e1264bc95acb6430);
+        
+
+        marker_45e5ced43c4590bea0c0652e7e38b455.bindPopup(popup_477117cb482fcc12d2e5256f43568f94)
+        ;
+
+        
+    
+    
+            var marker_3d4c130a3e1aa4b3370cdd22879b3be3 = L.marker(
+                [51.17991111, -1.826162291],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_8f831c88f011570e94667f45ac7e9011 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d4c130a3e1aa4b3370cdd22879b3be3.setIcon(icon_8f831c88f011570e94667f45ac7e9011);
+        
+    
+        var popup_b6fafcfb2cb8ac0fc917b8b399b5c349 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b991d3c8a80d8a61bea3a1ac6fe9dcdb = $(`<div id="html_b991d3c8a80d8a61bea3a1ac6fe9dcdb" style="width: 100.0%; height: 100.0%;">Stonehenge, England</div>`)[0];
+            popup_b6fafcfb2cb8ac0fc917b8b399b5c349.setContent(html_b991d3c8a80d8a61bea3a1ac6fe9dcdb);
+        
+
+        marker_3d4c130a3e1aa4b3370cdd22879b3be3.bindPopup(popup_b6fafcfb2cb8ac0fc917b8b399b5c349)
+        ;
+
+        
+    
+    
+            var marker_a8b34dbb7c6f3b9528a385572dd057cc = L.marker(
+                [-7.607703644, 110.2040088],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_fd6b25b1b184866e538390ade5aa3b7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a8b34dbb7c6f3b9528a385572dd057cc.setIcon(icon_fd6b25b1b184866e538390ade5aa3b7e);
+        
+    
+        var popup_982df40335edbb036336ce4e51755624 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_470d2548e069b35af69c7da486162585 = $(`<div id="html_470d2548e069b35af69c7da486162585" style="width: 100.0%; height: 100.0%;">Borobudur, Indonesia</div>`)[0];
+            popup_982df40335edbb036336ce4e51755624.setContent(html_470d2548e069b35af69c7da486162585);
+        
+
+        marker_a8b34dbb7c6f3b9528a385572dd057cc.bindPopup(popup_982df40335edbb036336ce4e51755624)
+        ;
+
+        
+    
+    
+            var marker_62cd251baa71face574fb244142e701b = L.marker(
+                [43.09636654, -79.03826781],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_e537b1016ce6c51970cab3e827859003 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62cd251baa71face574fb244142e701b.setIcon(icon_e537b1016ce6c51970cab3e827859003);
+        
+    
+        var popup_919d7fb695720ec4d1e8307a1da2f5cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6cd9cca9bded6d7c889b97a296fc26a = $(`<div id="html_f6cd9cca9bded6d7c889b97a296fc26a" style="width: 100.0%; height: 100.0%;">Niagara Falls, Canada & USA</div>`)[0];
+            popup_919d7fb695720ec4d1e8307a1da2f5cf.setContent(html_f6cd9cca9bded6d7c889b97a296fc26a);
+        
+
+        marker_62cd251baa71face574fb244142e701b.bindPopup(popup_919d7fb695720ec4d1e8307a1da2f5cf)
+        ;
+
+        
+    
+    
+            var marker_a7d2ad502ae7c1a108ea4c87d9914fbf = L.marker(
+                [21.17198746, 94.85929774],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_9c4bda439f84e6409ede72afdcecc3fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7d2ad502ae7c1a108ea4c87d9914fbf.setIcon(icon_9c4bda439f84e6409ede72afdcecc3fd);
+        
+    
+        var popup_5050f964bd552d1fc9f8c3bb049f9914 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca3896de2d3da02785480ca6e5a94159 = $(`<div id="html_ca3896de2d3da02785480ca6e5a94159" style="width: 100.0%; height: 100.0%;">Bagan, Myanmar</div>`)[0];
+            popup_5050f964bd552d1fc9f8c3bb049f9914.setContent(html_ca3896de2d3da02785480ca6e5a94159);
+        
+
+        marker_a7d2ad502ae7c1a108ea4c87d9914fbf.bindPopup(popup_5050f964bd552d1fc9f8c3bb049f9914)
+        ;
+
+        
+    
+    
+            var marker_cad099bea0d91bf12cddcc95b17f992b = L.marker(
+                [-33.8566151, 151.2156078],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_a4a31da205bc8ab2d704e7d913b54a11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cad099bea0d91bf12cddcc95b17f992b.setIcon(icon_a4a31da205bc8ab2d704e7d913b54a11);
+        
+    
+        var popup_8e54ce788975ff4459c6b9e7429fa698 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8209e724ad31040b421a53e01eb99f20 = $(`<div id="html_8209e724ad31040b421a53e01eb99f20" style="width: 100.0%; height: 100.0%;">Sydney Opera House</div>`)[0];
+            popup_8e54ce788975ff4459c6b9e7429fa698.setContent(html_8209e724ad31040b421a53e01eb99f20);
+        
+
+        marker_cad099bea0d91bf12cddcc95b17f992b.bindPopup(popup_8e54ce788975ff4459c6b9e7429fa698)
+        ;
+
+        
+    
+    
+            var marker_0a5c4ba26804255b1c809b3f8f0e5a05 = L.marker(
+                [-3.06064575, 37.35569405],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_580984d93e6d6e702bd4d76b52f3aafc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0a5c4ba26804255b1c809b3f8f0e5a05.setIcon(icon_580984d93e6d6e702bd4d76b52f3aafc);
+        
+    
+        var popup_30d01449730c41f8717b0088c4ecdbfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fde545ab4566f760a695263dabf50f2 = $(`<div id="html_3fde545ab4566f760a695263dabf50f2" style="width: 100.0%; height: 100.0%;">Mount Kilimanjaro</div>`)[0];
+            popup_30d01449730c41f8717b0088c4ecdbfd.setContent(html_3fde545ab4566f760a695263dabf50f2);
+        
+
+        marker_0a5c4ba26804255b1c809b3f8f0e5a05.bindPopup(popup_30d01449730c41f8717b0088c4ecdbfd)
+        ;
+
+        
+    
+    
+            var marker_4a292fe6c5e79119695abff6126f18ef = L.marker(
+                [48.86444601, 2.327359609],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_b03edd0074cb986cf1726989fe5512f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a292fe6c5e79119695abff6126f18ef.setIcon(icon_b03edd0074cb986cf1726989fe5512f6);
+        
+    
+        var popup_dd4f34900bbafb511c3a87ded829aefa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_341a3b877ffd4225aa8a11d390ff9802 = $(`<div id="html_341a3b877ffd4225aa8a11d390ff9802" style="width: 100.0%; height: 100.0%;">The Louvre, Paris</div>`)[0];
+            popup_dd4f34900bbafb511c3a87ded829aefa.setContent(html_341a3b877ffd4225aa8a11d390ff9802);
+        
+
+        marker_4a292fe6c5e79119695abff6126f18ef.bindPopup(popup_dd4f34900bbafb511c3a87ded829aefa)
+        ;
+
+        
+    
+    
+            var marker_b40a881ce9598e8be5533279ed0b2f30 = L.marker(
+                [39.91713664, 116.391128],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_31ed377707988783d34e28995c56e3ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b40a881ce9598e8be5533279ed0b2f30.setIcon(icon_31ed377707988783d34e28995c56e3ed);
+        
+    
+        var popup_271243fdd2e63fd846b63e4432e62743 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be0ed552eb1203d46d9bd6f54b064bc9 = $(`<div id="html_be0ed552eb1203d46d9bd6f54b064bc9" style="width: 100.0%; height: 100.0%;">Forbidden City, China</div>`)[0];
+            popup_271243fdd2e63fd846b63e4432e62743.setContent(html_be0ed552eb1203d46d9bd6f54b064bc9);
+        
+
+        marker_b40a881ce9598e8be5533279ed0b2f30.bindPopup(popup_271243fdd2e63fd846b63e4432e62743)
+        ;
+
+        
+    
+    
+            var marker_ed24c36d46e4ef590b43d11fd83852e4 = L.marker(
+                [50.09124113, 14.40162723],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_f17b5693343b5fcae53425eaec33ac6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed24c36d46e4ef590b43d11fd83852e4.setIcon(icon_f17b5693343b5fcae53425eaec33ac6b);
+        
+    
+        var popup_6b4fd7ae703d812cab86dd593f7def75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02fe07a61a12531e3f39e013873cec77 = $(`<div id="html_02fe07a61a12531e3f39e013873cec77" style="width: 100.0%; height: 100.0%;">Prague Castle, Czech Republic</div>`)[0];
+            popup_6b4fd7ae703d812cab86dd593f7def75.setContent(html_02fe07a61a12531e3f39e013873cec77);
+        
+
+        marker_ed24c36d46e4ef590b43d11fd83852e4.bindPopup(popup_6b4fd7ae703d812cab86dd593f7def75)
+        ;
+
+        
+    
+    
+            var marker_86bf5aeb5c027914a0ccc0a79ef0333e = L.marker(
+                [20.68459037, -88.56719963],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_6b3852d2b5d3e49059b2e884ffa558b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86bf5aeb5c027914a0ccc0a79ef0333e.setIcon(icon_6b3852d2b5d3e49059b2e884ffa558b4);
+        
+    
+        var popup_0df8196157d41852f05938db5b86c6a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd285b9f06d136af92169fa2cefeca11 = $(`<div id="html_fd285b9f06d136af92169fa2cefeca11" style="width: 100.0%; height: 100.0%;">Chichen Itza, Mexico</div>`)[0];
+            popup_0df8196157d41852f05938db5b86c6a1.setContent(html_fd285b9f06d136af92169fa2cefeca11);
+        
+
+        marker_86bf5aeb5c027914a0ccc0a79ef0333e.bindPopup(popup_0df8196157d41852f05938db5b86c6a1)
+        ;
+
+        
+    
+    
+            var marker_0689cf1f17806334ee7a4c14e9c826d0 = L.marker(
+                [-22.95138441, -43.20985887],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_f7286604b5c4f71a78494c7c5af60915 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0689cf1f17806334ee7a4c14e9c826d0.setIcon(icon_f7286604b5c4f71a78494c7c5af60915);
+        
+    
+        var popup_ea69b673fe3827d539810664e87178a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e7f49f4d817817905cade808a0ba79a = $(`<div id="html_5e7f49f4d817817905cade808a0ba79a" style="width: 100.0%; height: 100.0%;">Corcovado and Cristo Redentor, Rio de Janeiro</div>`)[0];
+            popup_ea69b673fe3827d539810664e87178a8.setContent(html_5e7f49f4d817817905cade808a0ba79a);
+        
+
+        marker_0689cf1f17806334ee7a4c14e9c826d0.bindPopup(popup_ea69b673fe3827d539810664e87178a8)
+        ;
+
+        
+    
+    
+            var marker_38fd29bd2e7b13d8744966c9db0b99f1 = L.marker(
+                [48.8050274, 2.120730907],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_8e46334ecea2d546e8f2a8114615b784 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38fd29bd2e7b13d8744966c9db0b99f1.setIcon(icon_8e46334ecea2d546e8f2a8114615b784);
+        
+    
+        var popup_d2f903ac4e43a1aed62afa53e9c21fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e36d170136e12f15eb5b1df364a4b805 = $(`<div id="html_e36d170136e12f15eb5b1df364a4b805" style="width: 100.0%; height: 100.0%;">Château de Versailles, France</div>`)[0];
+            popup_d2f903ac4e43a1aed62afa53e9c21fd9.setContent(html_e36d170136e12f15eb5b1df364a4b805);
+        
+
+        marker_38fd29bd2e7b13d8744966c9db0b99f1.bindPopup(popup_d2f903ac4e43a1aed62afa53e9c21fd9)
+        ;
+
+        
+    
+    
+            var marker_1ed9b52f5aa063bd3b2c89d025b899bd = L.marker(
+                [35.36146465, 138.7250459],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_05b3d80917c4f1450c548cbc27092271 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ed9b52f5aa063bd3b2c89d025b899bd.setIcon(icon_05b3d80917c4f1450c548cbc27092271);
+        
+    
+        var popup_1b792389a9164edd6d1c21aec8828a79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac0b2a4ed4c6474ab34fbad0a6819287 = $(`<div id="html_ac0b2a4ed4c6474ab34fbad0a6819287" style="width: 100.0%; height: 100.0%;">Mount Fuji</div>`)[0];
+            popup_1b792389a9164edd6d1c21aec8828a79.setContent(html_ac0b2a4ed4c6474ab34fbad0a6819287);
+        
+
+        marker_1ed9b52f5aa063bd3b2c89d025b899bd.bindPopup(popup_1b792389a9164edd6d1c21aec8828a79)
+        ;
+
+        
+    
+    
+            var marker_6409bbb7a9cf03ba17f41ad77f66dd1c = L.marker(
+                [40.78139861, -73.96613829],
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+    
+            var icon_4725ad3eeead4c627db3f71694f954dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6409bbb7a9cf03ba17f41ad77f66dd1c.setIcon(icon_4725ad3eeead4c627db3f71694f954dd);
+        
+    
+        var popup_a60ec0d03b77704828ce71d1ffcf592b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4929ede51ba52f732ff258b2f8e85b34 = $(`<div id="html_4929ede51ba52f732ff258b2f8e85b34" style="width: 100.0%; height: 100.0%;">Central Park, New York City</div>`)[0];
+            popup_a60ec0d03b77704828ce71d1ffcf592b.setContent(html_4929ede51ba52f732ff258b2f8e85b34);
+        
+
+        marker_6409bbb7a9cf03ba17f41ad77f66dd1c.bindPopup(popup_a60ec0d03b77704828ce71d1ffcf592b)
+        ;
+
+        
+    
+    
+            var feature_group_951ea1ec3ac111f84172af149a96a1af = L.featureGroup(
+                {}
+            ).addTo(map_f21bc76b4a2dd533dba75a97ea05c7fd);
+        
+</script>
